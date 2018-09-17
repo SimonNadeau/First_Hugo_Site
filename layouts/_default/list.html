@@ -1,0 +1,14 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {{.Content}}
+    {{ range .Pages }}
+        <ul>
+            <li><a href="{{.URL}}">{{.Title}}</a></li>
+        </ul>>
+    {{end}}
+</body>
+</html>
